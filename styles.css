@@ -1,0 +1,376 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+    /*Navigation desktop*/
+html{
+    min-height:100%;
+}
+body{
+    background-color:#fafafa;
+    margin:0;
+    padding:0;
+    font-family:'Public Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p,span{
+    font-family: 'Public Sans', sans-serif;
+    color:hsl(233, 26%, 24%);
+}
+nav{
+    background-color:white;
+    padding:16px 150px ;      
+    z-index:1233;
+    position:relative;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    width: 75rem;
+
+}
+.section1{
+    width: 650px;
+    overflow-x: clip;
+    margin-top: 15rem;
+
+
+
+}
+.section1 > h1{
+    font-size: 54px;
+    font-weight: 300;
+    letter-spacing: -.01em;
+    line-height: 1.2em;
+    
+
+}
+p{
+    color:hsl(233, 8%, 62%);
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.7em;
+    letter-spacing: -.01em;
+}
+.section2{
+    height:650px;
+    overflow-x:clip;
+}
+.flexbox{
+    display: flex;
+    margin-top: 5rem;
+}
+.next{
+    background-color: hsl(0, 0%, 98%);
+    margin-top: 10rem;
+}
+
+.article{
+    margin-top: 5rem;
+    margin-left: 0rem;
+    background-color:#fafafa;
+
+}
+.first, .second, .third, .fourth{
+    flex-direction: row;
+    gap: 5rem;
+    flex-wrap: nowrap;
+    margin: 50px 0;
+    padding: 10px;
+    background: #fff;
+}
+article>img{
+    max-width: 100%;
+    width:100%;
+    max-height: 100%;
+    height:48%;
+    border-radius: 5px 5px 0 0; 
+}
+article>p{
+    font-size:14px;
+    line-height: 18px;
+    font-weight: 300;
+}
+footer{
+    background-color: hsl(233, 26%, 24%);
+    padding:50px 150px;
+}
+footer>img{
+    color:#ffffff;
+}
+.socialicons-cont{
+    margin:50px 0 0px 0;
+}
+.socialicons{
+    margin-right:10px;
+}
+
+.socialicons:hover .filter-green{
+    filter:invert(60%) sepia(93%) saturate(349%) hue-rotate(103deg) brightness(130%) contrast(85%);
+}
+.sociallinks{
+    display: block;
+    text-decoration: none;
+    color:hsl(220deg 16% 96% / 82%);
+    font-size:15px;
+    font-family:'Public Sans', sans-serif;
+    font-weight: 300;
+    padding:5px;
+    z-index:2;
+}
+a.sociallinks:hover{
+    color:#2ec787;
+}
+div.req-btn-cont{
+    padding: 0px 0px;
+    border-radius: 22px;
+    width: 160px;
+    background-color:white;
+    display: block;
+    float:right;
+    margin-right: -5px;
+    opacity:100%;
+    position:relative;
+    height: 42px;
+}
+div#footer-reqinvite{
+    display: block;
+    float:right;
+    margin-right:-5px;
+    position:absolute;
+
+}
+div#footer-reqinvite:hover{
+    cursor:pointer;
+    opacity:60%;
+    font-weight: 400;
+    font-size: 14.5px;
+}
+p#copyright{
+    color:hsla(233, 8%, 62%, 0.904);
+    float:right;
+    font-size: 15px;
+    margin:30px 0 0 0;
+}
+.footercols{
+    margin:0 0 30px 0;
+}
+/*Styling attribution*/  
+.attribution { font-size: 11px; text-align: center; color:white; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.w3-half{
+        width:35%;
+}
+
+.displaymod{
+  display: block;
+}
+
+
+
+
+@media only screen and (min-width:1400px){
+    .flex-cont-header>#header-cont{
+        padding: 150px 70px 0px 165px;
+    }
+    div#header-side-img{
+        background-position: -50px -275px;
+    }
+    .div>#header-imgphones{
+    position:absolute;
+    clip:rect(0px, 6px, 100%, 0px);
+    }
+    nav{
+        padding:16px 165px;
+    }
+    section{
+        padding:75px 165px;
+    }
+    .flex-cont-features{
+        gap:0.9em;
+    }
+    .flex-item-feat>p {
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .whyeasybank-cont>h2{
+        font-size:42px;
+        font-weight: 400;
+    }
+    footer{
+        padding:50px 170px;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .flex-cont-header>#header-cont{
+       padding:100px 10px 0px 100px;
+    } 
+    div#header-side-img{
+        background-size: 170%;
+        background-position: 0px -220px;
+    }
+    nav{
+        padding:20px 100px;
+    }
+    section{
+        padding:75px 100px;
+    }
+    footer{
+        padding:50px 100px;
+    }
+    .latestposts-cont{
+        justify-content:space-around;
+        flex-wrap: wrap;
+        gap:0em;
+    }
+    .latestposts-item{
+        width:45%;
+        height:auto;
+        margin-bottom:30px;
+    }
+    .latestposts-item:nth-child(odd){
+        margin-right:30px;
+    }
+    .latestposts-item>img{
+        height:55%;
+    }
+    .latestcontent{
+        padding:20px 30px 0 20px;
+    }
+}
+@media only screen and (max-width:992px){
+    nav{
+        padding:20px 50px;
+    }
+    section{
+        padding:75px;
+    }
+    footer{
+        padding:50px 75px;
+    }
+    .flex-cont-header>#header-cont{
+        padding: 100px 75px 75px 75px;
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+    .flex-cont-header>#header-cont>p{
+            text-align: center;
+    }
+    .flex-cont-header>#header-cont>.headercta{
+            text-align: center;
+            margin:35px auto 0px auto;
+    }
+    .flex-item{
+        width:100%;
+    }
+    div#header-side-img{
+        width: 100%;
+        height: 700px;
+        background-size: 165%;
+        background-position: -220px -300px;
+    }
+
+    div>#header-imgphones{
+        top: -13em;
+        z-index: 1;
+        max-width: 80vw;
+        min-width: 735px;
+        height: auto;
+        clip: unset;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+    /*Why easybank*/
+    .whyeasybank-cont, .whyeasybank-cont>p{
+        text-align:center;
+        width:100%;
+        padding:0 2em;
+    }
+    .flex-cont-features{
+        flex-wrap: wrap;
+        gap:0.5em;
+    }
+    .flex-item-feat{
+        width:48%;
+    }
+    .flex-item-feat>img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flex-item-feat>p, .flex-item-feat>h3{
+        text-align: center;
+    }
+    .flex-item-feat>p{
+        padding:0 25px;
+    }
+    .latestposts-item{
+        width:45%;
+        height:445px;
+    }
+    .latestposts-item>img{
+        height:42%;
+    }
+    .w3-half{
+        width:49.999%;
+    }
+    .socialicons-cont {
+        margin: 30px 0 0px 15px;
+    }
+    a.socialicons>img {
+        width:24px;
+    }
+    .socialicons {
+        margin-right: 13px;
+    }
+}
+@media only screen and (max-width:768px){
+    .flex-item-feat{
+        width:100%;
+        text-align: center;
+    }
+    .flex-item-feat>p{
+        text-align: center;
+        padding:0 50px;
+    }
+    .flex-cont-features{
+        flex-wrap: wrap;
+        gap:2em;
+    }
+    section{
+        padding:75px 50px;
+    }
+    div#header-side-img{
+        height: 87vw;
+        background-size: 175%;
+        background-position: -165px -230px
+    }
+    div>#header-imgphones{
+        top: -13em;
+        z-index: 1;
+        max-width: 95vw;
+        min-width: 630px;
+    }
+    .flex-cont-header>#header-cont {
+        padding: 75px 75px 75px 75px;
+    }
+    .latestposts-item>img{
+        height:40%;
+    }
+    footer{
+        padding:35px 50px;
+        text-align:center
+    }
+    .w3-col.m4, .w3-half{
+        width:100%;
+    }
+    .footercols:last-child{
+        position: relative;
+        margin-top:-50px;
+    }
+}
+    
